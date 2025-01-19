@@ -38,9 +38,11 @@
       <!-- Stripe -->
       <script src="https://js.stripe.com/v3/"></script>
     {% endblock corejs %}
-    {% block extra_js %}{% endblock extra_js %}
+    {% block extra_js %}
+    {% endblock extra_js %}
     <title>Boutique Ado
-      {% block extra_title %}{% endblock extra_title %}
+      {% block extra_title %}
+      {% endblock extra_title %}
     </title>
   </head>
   <body>
@@ -129,8 +131,8 @@
                   aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          {% comment %} {% include 'includes/mobile-top-header.html' %}
-          {% include 'includes/main-nav.html' %} {% endcomment %}
+          {% include "includes/mobile-top-header.html" %}
+          {% include "includes/main-nav.html" %}
         </nav>
       </div>
       <div id="delivery-banner" class="row text-center">
@@ -156,8 +158,12 @@
         {% endfor %}
       </div>
     {% endif %}
-    {% block page_header %}{% endblock page_header %}
-    {% block content %}{% endblock content %}
-    {% block postloadjs %}<script type="text/javascript">$('.toast').toast('show');</script>{% endblock postloadjs %}
+    {% block page_header %}
+    {% endblock page_header %}
+    {% block content %}
+    {% endblock content %}
+    {% block postloadjs %}
+      <script type="text/javascript">$('.toast').toast('show');</script>
+    {% endblock postloadjs %}
   </body>
 </html>
