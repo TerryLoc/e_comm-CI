@@ -97,14 +97,12 @@ body {
 
 /* fixed products header on small screens */
 
-@media (max-width: 990px) {
-  .small-screen {
-    margin-top: 100px;
+@media (max-width: 991px) {
+  .header-container {
+    padding-top: 116px;
   }
-}
 
-@media (max-width: 440px) {
-  .small-screen {
-    margin-top: 200px;
+  body {
+    height: calc(100vh - 116px);
   }
 }
