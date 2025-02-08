@@ -15,4 +15,5 @@
    "files.autoSave": "off",
    "workbench.colorTheme": "One Monokai",
    "terminal.integrated.gpuAcceleration": "canvas",
+   "djlint.showInstallError": false,
 }
